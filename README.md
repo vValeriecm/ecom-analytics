@@ -64,3 +64,17 @@ An end-to-end analytics platform for e-commerce, providing insights into sales, 
    ```bash
    uvicorn app.main:app --reload
    ```
+
+## Deployment to Vercel
+
+This project is optimized for deployment on Vercel.
+
+### Frontend Deployment
+The `ecom-analytics-frontend` folder can be deployed as a standard Next.js project on Vercel. Vercel will automatically detect the framework and configure the build settings.
+
+### Backend Deployment
+The `ecom-analytics-backend` folder is configured for Vercel using `vercel.json`.
+1. Push your code to GitHub.
+2. Import the repository into Vercel.
+3. Set the **Root Directory** to `ecom-analytics-backend` for the backend project.
+4. Vercel will use the `@vercel/python` runtime to serve the FastAPI application.
